@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "nightside";
+$dbname = "nazwabazydanych";
 
 // Połączenie z MySQLi
 $conn = new mysqli($servername, $username, $password, $dbname);
