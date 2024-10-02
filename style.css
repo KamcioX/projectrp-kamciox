@@ -1,0 +1,315 @@
+/* style.css */
+.body {
+  background-color: #343a40 !important;
+}
+/* style.css */
+
+/* Styles for the loading screen */
+#loadingScreen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #121212;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  flex-direction: row;
+}
+.lead {
+  font-size: 1.25rem !important;
+  font-weight: 300 !important;
+  text-align: center !important;
+}
+/* style.css */
+
+/* Zastosowanie pełnej szerokości dla przycisków */
+.btn-block {
+  width: 100%;
+  margin-bottom: 10px; /* Opcjonalnie, dodaje odstęp między przyciskami */
+}
+
+/* Opcjonalnie: jeśli chcesz mieć inne style dla przycisków w ciemnym trybie */
+.custom-bg-color .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, .5);
+  font-weight: 600;
+}
+.custom-bg-color .btn-info {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.custom-bg-color .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.display-4 {
+  font-size: 3.5rem !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+}
+.spinner-dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 0.3rem; /* odstęp między kropkami */
+}
+
+/* Animacja dla kropki */
+@keyframes fadeInOut {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+/* Default dark background */
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+/* Custom CSS for Dark Mode */
+.dark-mode .bg-dark {
+  background-color: #181c21 !important;
+}
+body {
+  --sb-track-color: #53595c;
+  --sb-thumb-color: #0a0e0c;
+  --sb-size: 5px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+.dark-mode .quiz {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #f8f9fa !important;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+}
+.dark-mode .tytulyyy {
+  margin-bottom: .75rem;
+  color: rgb(19, 18, 18);
+}
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.custom-control.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #007bff;
+}
+
+.custom-control.custom-switch .custom-control-label::before {
+  background-color: #6c757d;
+  border-radius: 34px;
+  height: 20px;
+  width: 40px;
+}
+
+.custom-control.custom-switch .custom-control-label::after {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-control.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  transform: translateX(20px);
+}
+
+.custom-control-label .fas {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+/* Additional custom styles */
+.jumbotron {
+  background-color: #f8f9fa;
+}
+.dark-mode .card-title {
+  margin-bottom: .75rem;
+  color: rgb(255, 253, 253);
+}
+.dark-mode .btn-light {
+  color: #f9f9f9;
+  background-color: #770909;
+  border-color: #a32727;
+}
+/* Wyśrodkowanie kontenera paginacji */
+.pagination-container {
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie w poziomie */
+  margin-top: 20px; /* Opcjonalnie: margines górny dla lepszego wyglądu */
+}
+
+/* Dostosowanie stylów dla przycisków paginacji */
+.pagination {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.dark-mode .form-check-label {
+  margin-bottom: 0;
+  color: black;
+}
+.support-moderator {
+  color: yellow;
+}
+.admin-management {
+  color: red;
+}
+.quiz {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff ;!important
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+}
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff !important;
+
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+}
+
+.dark-mode .card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #181c21 !important;
+
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+}
+
+.dark-mode .list-group-item {
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+/* Standardowy styl */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Tryb ciemny */
+@media (prefers-color-scheme: dark) {
+  body.dark-mode {
+      background-color: #222;
+      color: #fff;
+  }
+}
+.pytania {
+  text-align: center !important;
+  color: black;
+}
+
+.dark-mode .jumbotron {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #f8f9fa;
+}
+.dark-mode .modal-content {
+  background-color: #333; /* Kolor tła dla trybu ciemnego */
+  color: #fff; /* Kolor tekstu dla trybu ciemnego */
+}
+.dark-mode .footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .navbar {
+  background-color: #181c21 !important;
+}
+
+body.dark-mode table {
+  color: white;
+  background-color: #2b2b2b;
+}
+
+body.dark-mode th, body.dark-mode td {
+  border-color: #444;
+}
+
+body.dark-mode .table thead th {
+  color: white;
+  background-color: #3a3a3a;
+}
+
+body.dark-mode .table tbody tr:nth-child(odd) {
+  background-color: #2b2b2b;
+}
+
+body.dark-mode .table tbody tr:nth-child(even) {
+  background-color: #323232;
+}
